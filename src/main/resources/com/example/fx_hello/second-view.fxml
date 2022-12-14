@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<!--<AnchorPane xmlns="http://javafx.com/javafx"-->
+<!--            xmlns:fx="http://javafx.com/fxml"-->
+<!--            fx:controller="com.example.fx_hello.SecondController"-->
+<!--            prefHeight="400.0" prefWidth="600.0">-->
+
+<!--</AnchorPane>-->
+
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.fx_hello.HelloController">
+<padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+</padding>
+
+<Label fx:id="outputText"/>
+<Button fx:id="btnAdd" text="Add 1" onAction="#onAddButtonClick"/>
+
+<Button fx:id="btnFirst" text="First view" onAction="#onFirstViewButtonClick"/>
+
+    <Button fx:id="btnAbout" text="About" onAction="#onAboutButtonClick"/>
+</VBox>

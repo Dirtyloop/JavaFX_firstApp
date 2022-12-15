@@ -15,7 +15,7 @@ public class HelloController {
     Stage stage, aboutStage;
     FXMLLoader fxmlLoader;
 
-    private int counter = 0;
+    private static int counter = 0;
 
     @FXML
     private Label welcomeText, outputText, aboutText, aboutTitle;
@@ -80,7 +80,7 @@ public class HelloController {
     @FXML
     protected void onMoreButtonClick() {
 
-        aboutText.setText("My first JavaFX application made in 2022");
+        aboutText.setText("Your counter is " + counter);
     }
 
     @FXML
